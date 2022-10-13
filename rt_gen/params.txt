@@ -1,0 +1,21 @@
+###############################################################################################
+#   VARIABILI
+###############################################################################################
+
+VCN=ocid1.vcn.oc1.eu-milan-1.amaaaaaaf33b5qiaus65ngxmzd66iyxsll7iyfbnmcmvi67be4hrso7kjf6q
+
+COMPARTMENT=ocid1.compartment.oc1..aaaaaaaavhcceq3wvg3gf3eeij5xr3chzgvlb3ehrrze67wd5w4ziudvf5rq
+
+SUFFIX=SRECEIPT-TEST
+
+
+###############################################################################################
+#   NON MODIFICARE
+###############################################################################################
+
+RTAPI=RT-$SUFFIX-API
+RTLBL=RT-$SUFFIX-LBL
+RTWRK=RT-$SUFFIX-WRK
+RTDBCS=RT-$SUFFIX-DBCS
+
+###############################################################################################

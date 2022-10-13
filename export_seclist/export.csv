@@ -1,0 +1,34 @@
+"SL-SRECEIPT-TEST-DBCS","AVAILABLE",false,"ingress","6","source","172.27.1.192/27",,,"Allow pods on one worker node to communicate   with pods on other worker nodes."
+"SL-SRECEIPT-TEST-DBCS","AVAILABLE",false,"ingress","6","source","172.27.1.128/27",,,"Allow Kubernetes control plane to   communicate with worker nodes."
+"SL-SRECEIPT-TEST-DBCS","AVAILABLE",false,"ingress","1","source","0.0.0.0/0",,,"Path Discovery."
+"SL-SRECEIPT-TEST-WRK","AVAILABLE",false,"ingress","6","source","172.27.1.192/27",,,"Allow pods on one worker node to communicate   with pods on other worker nodes."
+"SL-SRECEIPT-TEST-WRK","AVAILABLE",false,"ingress","6","source","172.27.1.128/27",,,"Allow Kubernetes control plane to   communicate with worker nodes."
+"SL-SRECEIPT-TEST-WRK","AVAILABLE",false,"ingress","1","source","0.0.0.0/0",,,"Path Discovery."
+"SL-SRECEIPT-TEST-LBL","AVAILABLE",false,"ingress","6","source","0.0.0.0/0",80,80,
+"SL-SRECEIPT-TEST-LBL","AVAILABLE",false,"ingress","6","source","0.0.0.0/0",443,443,
+"SL-SRECEIPT-TEST-API","AVAILABLE",false,"ingress","6","source","172.27.1.192/27",6443,6443,"Kubernetes worker to Kubernetes API endpoint   communication."
+"SL-SRECEIPT-TEST-API","AVAILABLE",false,"ingress","6","source","172.27.1.192/27",12250,12250,"Kubernetes worker to control plane   communication."
+"SL-SRECEIPT-TEST-API","AVAILABLE",false,"ingress","1","source","172.27.1.192/27",,,"Path Discovery."
+"Default Security List for VCN-SRECEIPT-TEST","AVAILABLE",false,"ingress","6","source","0.0.0.0/0",22,22,
+"Default Security List for VCN-SRECEIPT-TEST","AVAILABLE",false,"ingress","1","source","0.0.0.0/0",,,
+"Default Security List for VCN-SRECEIPT-TEST","AVAILABLE",false,"ingress","1","source","172.27.1.128/25",,,
+"SL-SRECEIPT-TEST-DBCS","AVAILABLE",false,"egress","6","destination","172.27.1.192/27",,,"Allow pods on one worker node to communicate   with pods on other worker nodes."
+"SL-SRECEIPT-TEST-DBCS","AVAILABLE",false,"egress","1","destination","0.0.0.0/0",,,
+"SL-SRECEIPT-TEST-DBCS","AVAILABLE",false,"egress","6","destination","172.27.1.192/27",6443,6443,"Kubernetes worker to Kubernetes API endpoint   communication."
+"SL-SRECEIPT-TEST-DBCS","AVAILABLE",false,"egress","6","destination","172.27.1.192/27",12250,12250,"Kubernetes worker to control plane   communication."
+"SL-SRECEIPT-TEST-DBCS","AVAILABLE",false,"egress","6","destination","0.0.0.0/0",,,"(optional) Allow worker nodes to communicate   with internet."
+"SL-SRECEIPT-TEST-DBCS","AVAILABLE",false,"egress","6","destination","172.27.1.224/27",1521,1521,"SQLNet connection to database Subnet"
+"SL-SRECEIPT-TEST-DBCS","AVAILABLE",false,"egress","all","destination","all-lin-services-in-oracle-services-network",,,
+"SL-SRECEIPT-TEST-WRK","AVAILABLE",false,"egress","6","destination","172.27.1.192/27",,,"Allow pods on one worker node to communicate   with pods on other worker nodes."
+"SL-SRECEIPT-TEST-WRK","AVAILABLE",false,"egress","1","destination","0.0.0.0/0",,,
+"SL-SRECEIPT-TEST-WRK","AVAILABLE",false,"egress","6","destination","172.27.1.192/27",6443,6443,"Kubernetes worker to Kubernetes API endpoint   communication."
+"SL-SRECEIPT-TEST-WRK","AVAILABLE",false,"egress","6","destination","172.27.1.192/27",12250,12250,"Kubernetes worker to control plane   communication."
+"SL-SRECEIPT-TEST-WRK","AVAILABLE",false,"egress","6","destination","0.0.0.0/0",,,"(optional) Allow worker nodes to communicate   with internet."
+"SL-SRECEIPT-TEST-WRK","AVAILABLE",false,"egress","6","destination","172.27.1.224/27",1521,1521,"SQLNet connection to database Subnet"
+"SL-SRECEIPT-TEST-WRK","AVAILABLE",false,"egress","all","destination","all-lin-services-in-oracle-services-network",,,
+"SL-SRECEIPT-TEST-LBL","AVAILABLE",false,"egress","6","destination","172.27.1.192/27",30000,32767,"Allow traffic to worker nodes."
+"SL-SRECEIPT-TEST-API","AVAILABLE",false,"egress","1","destination","172.27.1.192/27",,,"Path Discovery."
+"SL-SRECEIPT-TEST-API","AVAILABLE",false,"egress","6","destination","172.27.1.192/27",,,"All traffic to worker nodes."
+"SL-SRECEIPT-TEST-API","AVAILABLE",false,"egress","6","destination","all-lin-services-in-oracle-services-network",443,443,"Allow Kubernetes control plane to communicate with OKE."
+"SL-SRECEIPT-TEST-API","AVAILABLE",false,"egress","all","destination","0.0.0.0/0",,,"All Outbound Traffic"
+"Default Security List for VCN-SRECEIPT-TEST","AVAILABLE",false,"egress","all","destination","0.0.0.0/0",,,

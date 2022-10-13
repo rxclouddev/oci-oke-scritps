@@ -1,0 +1,21 @@
+SUFFIX=SRECEIPT-TEST
+
+WRKSUBNET=172.27.1.192/27
+APISUBNET=172.27.1.128/27
+DBSUBNET=172.27.1.224/27
+LBLSUBNET=172.27.1.160/27
+
+VCN=ocid1.vcn.oc1.eu-milan-1.amaaaaaaf33b5qiaus65ngxmzd66iyxsll7iyfbnmcmvi67be4hrso7kjf6q
+
+COMPARTMENT=ocid1.compartment.oc1..aaaaaaaavhcceq3wvg3gf3eeij5xr3chzgvlb3ehrrze67wd5w4ziudvf5rq
+
+###############################################################################################
+#   NON MODIFICARE
+###############################################################################################
+
+SLAPI=SL-$SUFFIX-API
+SLLBL=SL-$SUFFIX-LBL
+SLWRK=SL-$SUFFIX-WRK
+SLDBCS=SL-$SUFFIX-DBCS
+
+###############################################################################################
